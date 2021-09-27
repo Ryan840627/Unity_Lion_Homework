@@ -14,7 +14,7 @@ public class Monster : MonoBehaviour
     public int monsterTrackRange = 30;
     public Vector3 v3MonsterPosition;
     [Header("掉落道具係數")]
-    public bool GameObject = false;
+    public GameObject ItemDrop;
     [Range(0, 1)]
     public float GameObjectDrop = 1;
     [Header("音效檔案")]
@@ -25,15 +25,5 @@ public class Monster : MonoBehaviour
     private AudioSource aud;
     private Rigidbody2D rig;
     private Animator ani;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
