@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class NPC : MonoBehaviour
 {
     /// <summary>
     /// 對話
@@ -15,7 +15,6 @@ public class NewBehaviourScript : MonoBehaviour
     /// <summary>
     /// 開啟商店
     /// </summary>
-    /// <returns>是否開啟商店</returns>
     public bool OpenShop() 
     {
         return true;
@@ -25,7 +24,7 @@ public class NewBehaviourScript : MonoBehaviour
     /// </summary>
     /// <param name="ItemMoney">道具價錢</param>
     /// <returns></returns>
-    public int BuyItem(int ItemMoney=100) 
+    public int BuyItem(int Price=100) 
     {
         return 0;
     }
@@ -40,7 +39,7 @@ public class NewBehaviourScript : MonoBehaviour
     /// <summary>
     /// 任務更新
     /// </summary>
-    /// <param name="MissonItem">獲得的任務道具</param>
+    /// <param name="MissonItem">任務道具數量</param>
     /// <returns></returns>
     private int MissonUpdate(int MissonItem = 1)
     {
@@ -51,7 +50,7 @@ public class NewBehaviourScript : MonoBehaviour
     /// </summary>
     /// <param name="MissonNumber">任務編號</param>
     /// <returns></returns>
-    private bool MissonComplte(int MissonNumber)
+    private bool MissonComplete(int MissonNumber)
     {
         return false;
     }
